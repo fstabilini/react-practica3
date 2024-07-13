@@ -1,0 +1,40 @@
+/* General styles for the App component */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+/* Container for each character */
+.character-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  flex: 1 1 calc(33.333% - 40px); /* Adjust to fit 3 cards per row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Character name */
+.character-card h1 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+/* Character image */
+.character-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
